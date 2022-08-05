@@ -1,7 +1,6 @@
 package com.test.util;
 
 import java.io.IOException;
-
 import org.testng.annotations.DataProvider;
 
 public class DataProviderUtil {

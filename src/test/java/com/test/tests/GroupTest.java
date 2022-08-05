@@ -1,9 +1,12 @@
 package com.test.tests;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class GroupTest {
+	
+	WebDriver driver = null;
 	
 	@Test(groups= {"tests"}, priority=0)
 	public void test1() {
@@ -36,7 +39,6 @@ public class GroupTest {
 	@Test(groups= {"dev"}, priority=2, dependsOnGroups = "dev1")
 	public void dev3() {
 		System.out.println("Dev3");
-		
 	}
 	
 }

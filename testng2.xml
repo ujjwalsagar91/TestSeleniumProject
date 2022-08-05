@@ -1,19 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" data-provider-thread-count="1">
-	<test thread-count="5" name="Test1">
-		<groups>
+<suite name="Suite" thread-count="5" parallel="tests">
+	<test thread-count="5" name="Test1" >
+		<!-- <groups>
 			<run>
 				<include name="dev" />
 				<exclude name="tests" />
 			</run>
-		</groups>
+		</groups> -->
 		<classes>
-			<class name="com.test.tests.GroupTest">
+			<class name="com.test.tests.FindPriceTestFirefox" />
+			<!-- <class name="com.test.tests.FindPriceTest" /> -->
 				<!-- <methods>
 					<exclude name="test1" />
 				</methods> -->
-			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Test2" >
+		<!-- <groups>
+			<run>
+				<include name="dev" />
+				<exclude name="tests" />
+			</run>
+		</groups> -->
+		<classes>
+			<!-- <class name="com.test.tests.FindPriceTestFirefox" /> -->
+			<class name="com.test.tests.FindPriceTest" />
+				<!-- <methods>
+					<exclude name="test1" />
+				</methods> -->
 		</classes>
 	</test> <!-- Test -->
 

@@ -46,8 +46,6 @@ public class TestDataProvider extends BaseTest {
 		JavascriptExecutor js = (JavascriptExecutor)DriverManager.getDr();
 		js.executeScript("window.open('https://www.google.com');");
 		
-		Collections.synchronizedMap(null);
-		
 		Thread.sleep(5000);
 
 	}

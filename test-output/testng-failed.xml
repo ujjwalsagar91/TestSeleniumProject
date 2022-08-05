@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite data-provider-thread-count="1" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test1(failed)">
-    <groups>
-      <run>
-        <include name="dev"/>
-        <exclude name="tests"/>
-      </run>
-    </groups>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.tests.GroupTest">
+      <class name="com.test.tests.ThreadPoolSizeTest">
         <methods>
-          <include name="dev3"/>
-          <include name="dev2"/>
+          <include name="quitChrome"/>
         </methods>
-      </class> <!-- com.test.tests.GroupTest -->
+      </class> <!-- com.test.tests.ThreadPoolSizeTest -->
     </classes>
-  </test> <!-- Test1(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
